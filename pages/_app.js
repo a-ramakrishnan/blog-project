@@ -19,7 +19,7 @@ function MyApp({ Component, pageProps }) {
         setUser(user)
     }
     return (
-        <div class='container mx-auto'>
+        <div className='container mx-auto'>
             <nav className="p-6 border-b border-gray-300">
                 <Link href="/">
                     <span className="mr-6 cursor-pointer">Home</span>
