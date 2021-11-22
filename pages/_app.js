@@ -21,24 +21,24 @@ function MyApp({ Component, pageProps }) {
     return (
         <div className='container mx-auto'>
             <nav className="p-6 border-b border-gray-300">
-                <Link href="/">
+                <Link passHref href="/">
                     <span className="mr-6 cursor-pointer">Home</span>
                 </Link>
                 {
                     user && (
-                        <Link href="/create-post">
+                        <Link passHref href="/create-post">
                             <span className="mr-6 cursor-pointer">Create Post</span>
                         </Link>
                     )
                 }
                 {
                     user && (
-                        <Link href="/my-posts">
+                        <Link passHref href="/my-posts">
                             <a className="m-6">My Posts</a>
                         </Link>
                     )
                 }
-                <Link href="/profile">
+                <Link passHref href="/profile">
                     <span className="mr-6 cursor-pointer">Profile</span>
                 </Link>
             </nav>
